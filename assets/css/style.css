@@ -115,7 +115,7 @@
    max-width: 607px;
     /* margin-top: 308px; */
     /* margin-left: 397px; */
-    /* margin-bottom: 73.6px; */
+    margin-bottom: 73.6px;
 
 
 }
@@ -127,20 +127,22 @@ input[type=text] {
     font-weight: 500;
     line-height: 26px;
     letter-spacing: 0px;
-    text-align: left;
-    color: #8274BE;
+    text-align: left; 
     border: 2px solid #8274BE;
     border-radius: 100px;
     background-color:  #2F1893;
-    background-color: ;
     padding-top: 18px;
     padding-bottom: 16px;
     padding-left: 24px;
     /* margin-left: 450px; */
-    margin-bottom: 32.4px;
-    margin-top: 73px;
+   
+    /* margin-top: 73px; */
     padding-right: 120px;
     max-width: 350px;
+}
+
+input::placeholder{
+    color:  #6D5DB3;
 }
 
 .btn {
@@ -151,7 +153,7 @@ input[type=text] {
     font-style: normal;
     font-weight: 600;
     line-height: 26px;
-    letter-spacing: -0.25px;
+    /* letter-spacing: -0.25px; */
     border: 2px solid transparent;
     border-radius: 60px;
     background-color: white;
@@ -159,9 +161,12 @@ input[type=text] {
     padding-bottom: 16px;
     padding-left: 33px;
     padding-right: 37px;
-    margin-top: 44px;
+    /* margin-top: 44px; */
     margin-left: 13px;
     max-width: 120px;
+}
+.cursor-pointer {
+    cursor: pointer;
 }
 
 
@@ -176,10 +181,10 @@ input[type=text] {
     font-weight: 400;
     line-height: 22px;
     letter-spacing: -0.20000000298023224px;
-    text-align: left;
+    text-align: center;
     color: #6D5DB3;
-    margin-bottom: 118.6px;
-
+    /* margin-bottom: 118.6px; */
+    margin-top: 32.4px; 
 }
 
 .justify-content-center {
@@ -188,11 +193,15 @@ input[type=text] {
 .position-relative{
     position: relative;
 }
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
 @media (max-width:992px) {
 
     label[for="menu-icon" ]{
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
         color: #25DAC5;
         /* background-color: bisque;- */
         display: flex;
@@ -222,5 +231,8 @@ input[type=text] {
     }
     input:checked~.sm-screen{
         right: 0;
+    }
+    .my-30{
+        margin-top: 30px;
     }
 }
