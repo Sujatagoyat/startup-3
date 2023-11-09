@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1320px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.w-100{
+    width: 100%;
+}
+
+.bg-clr {
+    background-color: #2F1893;
+}
+
+.min-vh-100 {
+    height: 100vh;
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.2926828861236572px;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* margin-right: 719px; */
+}
+
+.links {
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.navbtn {
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border: 5px solid transparent;
+    border-radius: 100px;
+    padding-top: 7px, ;
+    padding-bottom: 7px, ;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.navbtn:hover {
+    background-color: #482BE7;
+    color: white;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.gap-33 {
+    gap: 33px;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-direction {
+    flex-direction: column;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+/* .align-content-center{
+    align-content: space-between;
+} */
+.text {
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: white;
+   max-width: 607px;
+    /* margin-top: 308px; */
+    /* margin-left: 397px; */
+    /* margin-bottom: 73.6px; */
+
+
+}
+
+input[type=text] {
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #8274BE;
+    border: 2px solid #8274BE;
+    border-radius: 100px;
+    background-color:  #2F1893;
+    background-color: ;
+    padding-top: 18px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    /* margin-left: 450px; */
+    margin-bottom: 32.4px;
+    margin-top: 73px;
+    padding-right: 120px;
+    max-width: 350px;
+}
+
+.btn {
+    color: black;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: -0.25px;
+    border: 2px solid transparent;
+    border-radius: 60px;
+    background-color: white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 33px;
+    padding-right: 37px;
+    margin-top: 44px;
+    margin-left: 13px;
+    max-width: 120px;
+}
+
+
+.btn:hover {
+    background-color: #25DAC5;
+    color: #FFF;
+}
+
+.text2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+    color: #6D5DB3;
+    margin-bottom: 118.6px;
+
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+.position-relative{
+    position: relative;
+}
+@media (max-width:992px) {
+
+    label[for="menu-icon" ]{
+        width: 50px;
+        height: 50px;
+        color: #25DAC5;
+        /* background-color: bisque;- */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1;
+    }
+    label[for="menu-icon" ]>span{
+        width: 100%;
+        height: 5px;
+        background-color: chocolate;
+         border-radius: 3px;
+        
+    }
+    .sm-screen{
+        flex-direction: column;
+        background-color: goldenrod;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        justify-content: center;
+        align-items: center;
+        transition: all 200ms linear;
+    }
+    input:checked~.sm-screen{
+        right: 0;
+    }
+}
